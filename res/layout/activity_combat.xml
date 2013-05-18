@@ -9,8 +9,86 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/testCombat" />
+        android:text="@string/enemy" />
+
+    <ProgressBar
+        android:id="@+id/progressBarEnemyHealth"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:progress="50" />
+
+    <Button
+        android:id="@+id/buttonBlock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonAttack"
+        android:layout_alignBottom="@+id/buttonAttack"
+        android:layout_toRightOf="@+id/buttonAttack"
+        android:text="@string/block" />
+
+    <Button
+        android:id="@+id/buttonPotion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonBlock"
+        android:layout_alignBottom="@+id/buttonBlock"
+        android:layout_toRightOf="@+id/buttonBlock"
+        android:text="@string/potion" />
+
+    <Button
+        android:id="@+id/buttonAttack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="@string/attack" />
+
+    <ProgressBar
+        android:id="@+id/progressBarPlayerHealth"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAttack"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignParentRight="true"
+        android:progress="75" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/progressBarPlayerHealth"
+        android:layout_alignLeft="@+id/buttonAttack"
+        android:text="@string/player" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView2"
+        android:layout_alignLeft="@+id/progressBarEnemyHealth"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/progressBarEnemyHealth" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/scrollingText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/prepare" />
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>

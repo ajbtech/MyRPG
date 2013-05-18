@@ -11,5 +11,20 @@
     <string name="testCombat">This is the combat screen</string>
     <string name="testInventory">This is the inventory screen</string>
     <string name="testMerchant">This is the merchant screen</string>
+    <string name="attack">Attack</string>
+    <string name="block">Block</string>
+    <string name="potion">Potion</string>
+    <string name="enemy">Enemy</string>
+    <string name="player">Player</string>
+    <string name="prepare">Prepare for battle!</string>
+    <string name="ourhero">HERO</string>
+    <string name="level">"Level: "</string>
+    <string name="health">"Health: "</string>
+    <string name="slash">/</string>
+    <string name="armor">Armor: </string>
+    <string name="percent">%</string>
+    <string name="damage">"Damage: "</string>
+    <string name="speed">"Speed: "</string>
+    <string name="blockText">"Block: "</string>
 
 </resources>
